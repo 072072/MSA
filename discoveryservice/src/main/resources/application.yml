@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discoveryservice
+
+eureka:
+  #의미가 없는 작업임으로 디폴트 true를 false로 바꿔준다.
+  #자기 자신은 정보를 전달하고 받을 필요가 없고 그냥 서버 자체로만 존재하면 되기때문임
+  client:
+    register-with-eureka: false
+    fetch-registry: false
